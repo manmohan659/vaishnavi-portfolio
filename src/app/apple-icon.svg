@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 180" fill="none">
+  <!-- Dark background with rounded corners -->
+  <rect width="180" height="180" rx="20" fill="#0A0A0A"/>
+  
+  <!-- Scales of Justice -->
+  <!-- Central pillar -->
+  <path d="M90 35v22M90 57v44" stroke="#10B981" stroke-width="8" stroke-linecap="round"/>
+  
+  <!-- Balance beam -->
+  <path d="M45 57h90" stroke="#10B981" stroke-width="8" stroke-linecap="round"/>
+  
+  <!-- Left scale -->
+  <path d="M45 57v17" stroke="#10B981" stroke-width="8" stroke-linecap="round"/>
+  <path d="M28 74c0 9.4 7.6 17 17 17s17-7.6 17-17H28z" stroke="#34D399" stroke-width="8" fill="none"/>
+  
+  <!-- Right scale -->
+  <path d="M135 57v17" stroke="#10B981" stroke-width="8" stroke-linecap="round"/>
+  <path d="M118 74c0 9.4 7.6 17 17 17s17-7.6 17-17h-34z" stroke="#34D399" stroke-width="8" fill="none"/>
+  
+  <!-- Base -->
+  <path d="M68 101v33M112 101v33" stroke="#10B981" stroke-width="8" stroke-linecap="round"/>
+  <path d="M57 134h66M73 145h34" stroke="#10B981" stroke-width="8" stroke-linecap="round"/>
+</svg>
