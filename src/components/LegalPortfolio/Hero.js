@@ -1,5 +1,5 @@
 import React, { useRef, useEffect, useState } from 'react';
-import { ArrowRight, ChevronDown, Shield, FileText, Globe, Linkedin, Mail } from 'lucide-react';
+ import { ArrowRight, ChevronDown, Shield, FileText, Globe, Linkedin, Mail } from 'lucide-react';
 
 const Hero = () => {
   const heroRef = useRef(null);
