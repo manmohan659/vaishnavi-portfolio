@@ -114,10 +114,10 @@ const Hero = () => {
 
           {/* Portrait with dramatic crop and filter */}
           <img
-+            src="/vimage.jpeg"
+            src="/vimage.jpeg"
             alt="Vaishnavi"
             className={`w-[120%] h-[120%] -ml-[10%] -mt-[10%] object-cover object-center transition-all duration-1000 ease-elegant ${isLoaded ? 'blur-0' : 'blur-sm'}`}
-          />
+        />
         </div>
       </div>
 

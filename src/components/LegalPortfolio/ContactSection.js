@@ -58,10 +58,10 @@ const ContactSection = () => {
       <div className="absolute bottom-0 left-0 w-64 h-64 bg-emerald-dark/5 blur-[120px] rounded-full"></div>
 
       <div className="absolute inset-0 opacity-5">
-        <img
+      <img
             src="/vimage.jpeg"
-          alt="Background"
-          className="w-full h-full object-cover object-center filter contrast-125 saturate-50"
+            alt="Vaishnavi"
+            className={`w-[120%] h-[120%] -ml-[10%] -mt-[10%] object-cover object-center transition-all duration-1000 ease-elegant ${isLoaded ? 'blur-0' : 'blur-sm'}`}
         />
       </div>
 
