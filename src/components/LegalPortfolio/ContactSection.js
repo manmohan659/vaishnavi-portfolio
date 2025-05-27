@@ -59,7 +59,8 @@ const ContactSection = () => {
 
       <div className="absolute inset-0 opacity-5">
         <img
-          src={`${process.env.NODE_ENV === 'production' ? '/Vaishnavi-Portfolio' : ''}/Vaishnavi.jpeg`}
+          //src={`${process.env.NODE_ENV === 'production' ? '/Vaishnavi-Portfolio' : ''}/Vaishnavi.jpeg`}
+          src="/Vaishnavi.jpeg"
           alt="Background"
           className="w-full h-full object-cover object-center filter contrast-125 saturate-50"
         />
