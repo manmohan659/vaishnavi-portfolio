@@ -103,7 +103,10 @@ const Hero = () => {
           style={{ transform: 'translate3d(0, 0, 0) scale(1)' }}
         >
           {/* Dark overlay gradient */}
-          <div className="absolute inset-0 bg-gradient-to-br from-rich-darker/95 via-rich-black/90 to-emerald-darkest/50 z-10"></div>
+          <div className="absolute inset-0 bg-gradient-to-br from-rich-darker/95 via-rich-black/90 to-emerald-darkest/50 z-10 md:from-rich-darker/95 md:via-rich-black/90 md:to-emerald-darkest/50"></div>
+
+          {/* Mobile-specific lighter overlay */}
+          <div className="absolute inset-0 bg-gradient-to-t from-rich-darkest/95 via-transparent to-transparent z-10 md:hidden"></div>
 
           {/* Noise texture overlay */}
           <div className="absolute inset-0 bg-noise-pattern opacity-[0.03] mix-blend-soft-light z-20"></div>
@@ -116,7 +119,7 @@ const Hero = () => {
           <img
             src="/vimage.jpeg"
             alt="Vaishnavi"
-            className={`w-[120%] h-[120%] -ml-[10%] -mt-[10%] object-cover object-center transition-all duration-1000 ease-elegant ${isLoaded ? 'blur-0' : 'blur-sm'}`}
+            className={`w-[120%] h-[120%] -ml-[10%] -mt-[10%] object-cover object-center transition-all duration-1000 ease-elegant ${isLoaded ? 'blur-0' : 'blur-sm'} md:object-center object-[center_25%] md:filter-none brightness-110 md:brightness-100`}
         />
         </div>
       </div>
@@ -127,62 +130,62 @@ const Hero = () => {
         className={`relative z-30 h-full transition-all duration-1000 ease-elegant ${isLoaded ? 'opacity-100' : 'opacity-0 translate-y-8'}`}
       >
         <div className="container h-full grid grid-cols-12 items-center">
-          <div className="col-span-12 lg:col-span-7 xl:col-span-6 space-y-8 xl:space-y-12 py-16">
+          <div className="col-span-12 lg:col-span-7 xl:col-span-6 space-y-6 md:space-y-8 xl:space-y-12 py-16 px-4 md:px-0">
             {/* Subtitle with gradient effect */}
             <div className="overflow-hidden">
-              <p className="text-sm md:text-base uppercase tracking-ultra-wide font-light text-emerald/80 mb-4 ml-1">
+              <p className="text-xs md:text-sm lg:text-base uppercase tracking-ultra-wide font-light text-emerald/80 mb-2 md:mb-4 ml-1">
                 Legal Excellence
               </p>
             </div>
 
             {/* Main headline with dramatic typography */}
             <div className="overflow-hidden">
-              <h1 className="font-serif font-light leading-tight">
+              <h1 className="font-serif font-light leading-tight text-3xl md:text-5xl lg:text-6xl xl:text-7xl">
                 <span className="block opacity-90">Expert Legal</span>
                 <span className="block gradient-text mt-1">Counsel Across Borders</span>
               </h1>
             </div>
 
             <div className="overflow-hidden delay-300">
-              <p className="text-silver max-w-xl font-light leading-relaxed">
+              <p className="text-silver max-w-xl font-light leading-relaxed text-base md:text-lg">
                 Bridging legal frameworks between <span className="text-emerald-light font-normal">US and Indian jurisdictions</span> with specialized expertise in international compliance, contract management, and corporate documentation.
               </p>
             </div>
 
             {/* Practice area indicators */}
-            <div className="flex flex-wrap gap-6 md:gap-10 mt-2 opacity-80">
+            <div className="flex flex-col sm:flex-row flex-wrap gap-4 md:gap-6 lg:gap-10 mt-2 opacity-80">
               <div className="flex items-center gap-2">
-                <FileText size={18} className="text-emerald-light" />
-                <span className="text-silver-light text-sm">Contract Management</span>
+                <FileText size={16} className="text-emerald-light md:w-[18px] md:h-[18px]" />
+                <span className="text-silver-light text-xs md:text-sm">Contract Management</span>
               </div>
               <div className="flex items-center gap-2">
-                <Globe size={18} className="text-emerald-light" />
-                <span className="text-silver-light text-sm">International Compliance</span>
+                <Globe size={16} className="text-emerald-light md:w-[18px] md:h-[18px]" />
+                <span className="text-silver-light text-xs md:text-sm">International Compliance</span>
               </div>
               <div className="flex items-center gap-2">
-                <Shield size={18} className="text-emerald-light" />
-                <span className="text-silver-light text-sm">Legal Documentation</span>
+                <Shield size={16} className="text-emerald-light md:w-[18px] md:h-[18px]" />
+                <span className="text-silver-light text-xs md:text-sm">Legal Documentation</span>
               </div>
             </div>
 
             {/* CTA Buttons with glass effect */}
-            <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 pt-4 sm:pt-6">
+            <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 pt-2 md:pt-4 sm:pt-6">
               <button
                 onClick={() => scrollToSection('contact')}
-                className="btn-primary group"
+                className="btn-primary group text-sm md:text-base"
               >
                 <span className="btn-primary-content">
                   Schedule Consultation
-                  <ArrowRight size={18} className="ml-2 transition-transform duration-300 group-hover:translate-x-1" />
+                  <ArrowRight size={16} className="ml-2 transition-transform duration-300 group-hover:translate-x-1 md:w-[18px] md:h-[18px]" />
                 </span>
               </button>
               <button
                 onClick={() => scrollToSection('practice')}
-                className="btn-secondary group"
+                className="btn-secondary group text-sm md:text-base"
               >
-                <span className="flex items-center">
+                <span className="flex items-center justify-center">
                   View Practice Areas
-                  <ArrowRight size={18} className="ml-2 opacity-0 group-hover:opacity-100 transition-all duration-300 group-hover:translate-x-1" />
+                  <ArrowRight size={16} className="ml-2 opacity-0 group-hover:opacity-100 transition-all duration-300 group-hover:translate-x-1 md:w-[18px] md:h-[18px]" />
                 </span>
               </button>
             </div>

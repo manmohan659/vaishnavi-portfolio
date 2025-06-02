@@ -63,7 +63,7 @@ const LegalPortfolio = () => {
 
     const timer = setTimeout(() => {
       setIsLoading(false);
-    }, 1000);
+    }, 500);
 
     document.documentElement.style.scrollBehavior = 'smooth';
 
@@ -147,9 +147,9 @@ const LegalPortfolio = () => {
                 <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-px bg-gradient-to-b from-transparent via-emerald-dark/30 to-transparent hidden lg:block"></div>
 
                 {/* Education Cards */}
-                <div className="space-y-20">
+                <div className="space-y-12 md:space-y-20">
                   {/* DR.D.Y. PATIL UNIVERSITY - Bachelor's */}
-                  <div id="patil-edu" className="glass-card p-8 md:p-10 lg:p-12 hover:shadow-emerald-sm transition-all duration-500 ease-elegant relative lg:ml-6 lg:mr-auto lg:w-[calc(50%-24px)]">
+                  <div id="patil-edu" className="glass-card p-6 md:p-8 lg:p-12 hover:shadow-emerald-sm transition-all duration-500 ease-elegant relative lg:ml-6 lg:mr-auto lg:w-[calc(50%-24px)]">
                     <div className="grid md:grid-cols-12 gap-8">
                       <div className="md:col-span-4 space-y-6">
                         <div className="inline-flex glass-card p-3 rounded-xl bg-glass-light backdrop-filter backdrop-blur-xl mb-4">
@@ -190,7 +190,7 @@ const LegalPortfolio = () => {
                   </div>
 
                   {/* REVA UNIVERSITY - Master's */}
-                  <div id="reva-edu" className="glass-card p-8 md:p-10 lg:p-12 hover:shadow-emerald-sm transition-all duration-500 ease-elegant relative lg:ml-auto lg:mr-6 lg:w-[calc(50%-24px)]">
+                  <div id="reva-edu" className="glass-card p-6 md:p-8 lg:p-12 hover:shadow-emerald-sm transition-all duration-500 ease-elegant relative lg:ml-auto lg:mr-6 lg:w-[calc(50%-24px)]">
                     <div className="grid md:grid-cols-12 gap-8">
                       <div className="md:col-span-4 space-y-6">
                         <div className="inline-flex glass-card p-3 rounded-xl bg-glass-light backdrop-filter backdrop-blur-xl mb-4">
@@ -231,7 +231,7 @@ const LegalPortfolio = () => {
                   </div>
 
                   {/* ST JOHN'S UNIVERSITY SCHOOL OF LAW - Master's */}
-                  <div id="stjohns-edu" className="glass-card p-8 md:p-10 lg:p-12 hover:shadow-emerald-sm transition-all duration-500 ease-elegant relative lg:ml-6 lg:mr-auto lg:w-[calc(50%-24px)]">
+                  <div id="stjohns-edu" className="glass-card p-6 md:p-8 lg:p-12 hover:shadow-emerald-sm transition-all duration-500 ease-elegant relative lg:ml-6 lg:mr-auto lg:w-[calc(50%-24px)]">
                     <div className="grid md:grid-cols-12 gap-8">
                       <div className="md:col-span-4 space-y-6">
                         <div className="inline-flex glass-card p-3 rounded-xl bg-glass-light backdrop-filter backdrop-blur-xl mb-4">
@@ -292,9 +292,9 @@ const LegalPortfolio = () => {
                 <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-px bg-gradient-to-b from-transparent via-emerald-dark/30 to-transparent hidden lg:block"></div>
 
                 {/* Professional Experience Cards */}
-                <div className="space-y-20">
+                <div className="space-y-12 md:space-y-20">
                   {/* Administrative Assistant (Legal) - Queens County Bar Association (First) */}
-                  <div id="queens-exp" className="glass-card p-8 md:p-10 lg:p-12 hover:shadow-emerald-sm transition-all duration-500 ease-elegant relative lg:ml-6 lg:mr-auto lg:w-[calc(50%-24px)]">
+                  <div id="queens-exp" className="glass-card p-6 md:p-8 lg:p-12 hover:shadow-emerald-sm transition-all duration-500 ease-elegant relative lg:ml-6 lg:mr-auto lg:w-[calc(50%-24px)]">
                     <div className="grid md:grid-cols-12 gap-8">
                       <div className="md:col-span-4 space-y-6">
                         <div className="inline-flex glass-card p-3 rounded-xl bg-glass-light backdrop-filter backdrop-blur-xl mb-4">
@@ -335,7 +335,7 @@ const LegalPortfolio = () => {
                   </div>
 
                   {/* Advocate Associate - I.V MERCHANT & CO. (Second) */}
-                  <div id="ivmerchant-exp" className="glass-card p-8 md:p-10 lg:p-12 hover:shadow-emerald-sm transition-all duration-500 ease-elegant relative lg:ml-auto lg:mr-6 lg:w-[calc(50%-24px)]">
+                  <div id="ivmerchant-exp" className="glass-card p-6 md:p-8 lg:p-12 hover:shadow-emerald-sm transition-all duration-500 ease-elegant relative lg:ml-auto lg:mr-6 lg:w-[calc(50%-24px)]">
                     <div className="grid md:grid-cols-12 gap-8">
                       <div className="md:col-span-4 space-y-6">
                         <div className="inline-flex glass-card p-3 rounded-xl bg-glass-light backdrop-filter backdrop-blur-xl mb-4">
@@ -376,7 +376,7 @@ const LegalPortfolio = () => {
                   </div>
 
                   {/* Legal Associate - WRITER BUSINESS SERVICES PRIVATE LIMITED (Third/Last) */}
-                  <div id="writer-exp" className="glass-card p-8 md:p-10 lg:p-12 hover:shadow-emerald-sm transition-all duration-500 ease-elegant relative lg:ml-6 lg:mr-auto lg:w-[calc(50%-24px)]">
+                  <div id="writer-exp" className="glass-card p-6 md:p-8 lg:p-12 hover:shadow-emerald-sm transition-all duration-500 ease-elegant relative lg:ml-6 lg:mr-auto lg:w-[calc(50%-24px)]">
                     <div className="grid md:grid-cols-12 gap-8">
                       <div className="md:col-span-4 space-y-6">
                         <div className="inline-flex glass-card p-3 rounded-xl bg-glass-light backdrop-filter backdrop-blur-xl mb-4">

@@ -350,6 +350,10 @@ html {
     stroke-width: 2 !important;
   }
 
+  .timeline-plane-down svg path {
+    stroke: currentColor !important;
+    stroke-width: 2 !important;
+  }
 
   /* HACK: Card-attached plane animations using ::after */
   #patil-edu::after {
@@ -516,5 +520,104 @@ html {
     60% { transform: translateX(calc(-50% - 200px)) translateY(-100px) rotate(180deg); opacity: 0.8; }
     80% { transform: translateX(calc(-50% - 280px)) translateY(-100px) rotate(180deg); opacity: 0; z-index: 1; }
     100% { transform: translateX(calc(-50% - 300px)) translateY(-100px) rotate(180deg); opacity: 0; z-index: 1; }
+  }
+
+  /* Mobile specific styles */
+  @media (max-width: 768px) {
+    /* Hide airplane animations on mobile */
+    #patil-edu::before,
+    #patil-edu::after,
+    #reva-edu::before,
+    #reva-edu::after,
+    #writer-exp::before,
+    #writer-exp::after,
+    #ivmerchant-exp::before,
+    #ivmerchant-exp::after {
+      display: none !important;
+    }
+
+    /* Fix overflow issues on mobile */
+    body {
+      overflow-x: hidden !important;
+    }
+
+    .container {
+      max-width: 100%;
+      overflow-x: hidden;
+    }
+
+    /* Optimize glass cards for mobile */
+    .glass-card {
+      margin-left: 0 !important;
+      margin-right: 0 !important;
+      width: 100% !important;
+    }
+
+    /* Hero section mobile optimizations */
+    .hero-image-mobile {
+      object-position: center top !important;
+      filter: brightness(0.8) !important;
+    }
+
+    /* Reduce padding on mobile */
+    section {
+      padding-top: 3rem !important;
+      padding-bottom: 3rem !important;
+    }
+
+    /* Fix timeline on mobile */
+    .timeline-connection {
+      display: none !important;
+    }
+
+    /* Ensure no horizontal scroll */
+    * {
+      max-width: 100vw !important;
+    }
+
+    /* Improve text readability on mobile */
+    h1 {
+      font-size: 2.5rem !important;
+      line-height: 1.2 !important;
+    }
+
+    h2 {
+      font-size: 2rem !important;
+      line-height: 1.3 !important;
+    }
+
+    p {
+      font-size: 1rem !important;
+      line-height: 1.6 !important;
+    }
+
+    /* Optimize buttons for mobile */
+    .btn-primary,
+    .btn-secondary {
+      width: 100%;
+      text-align: center;
+      padding: 1rem 2rem !important;
+    }
+
+    /* Fix social links on mobile */
+    .fixed.right-8 {
+      display: none !important;
+    }
+  }
+
+  /* Additional mobile breakpoint for very small screens */
+  @media (max-width: 480px) {
+    h1 {
+      font-size: 2rem !important;
+    }
+
+    h2 {
+      font-size: 1.75rem !important;
+    }
+
+    .container {
+      padding-left: 1rem !important;
+      padding-right: 1rem !important;
+    }
   }
 }
